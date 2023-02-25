@@ -13,7 +13,9 @@
       "default",
       {
         "ignore": [
-          "scale"
+          "scale",
+          "user-select",
+          "accent-color"
         ]
       }
     ],
