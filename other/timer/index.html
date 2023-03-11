@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="timer__title">Timer</div>
+        <div class="timer__wrapper">
+            <div class="timer__element">
+                <div id="days" class="timer__value">99</div>
+                <div class="timer__label">Days</div>
+                <div class="timer__buttons">
+                    <button type="button" class="timer__button">-</button>
+                    <button type="button" class="timer__button">+</button>
+                </div>
+            </div>
+            <div class="timer__divider">:</div>
+            <div class="timer__element">
+                <div id="hours" class="timer__value">23</div>
+                <div class="timer__label">Hours</div>
+                <div class="timer__buttons">
+                    <button type="button" class="timer__button">-</button>
+                    <button type="button" class="timer__button">+</button>
+                </div>
+            </div>
+            <div class="timer__divider">:</div>
+            <div class="timer__element">
+                <div id="minutes" class="timer__value">59</div>
+                <div class="timer__label">Minutes</div>
+                <div class="timer__buttons">
+                    <button type="button" class="timer__button">-</button>
+                    <button type="button" class="timer__button">+</button>
+                </div>
+            </div>
+            <div class="timer__divider">:</div>
+            <div class="timer__element">
+                <div id="seconds" class="timer__value">59</div>
+                <div class="timer__label">Seconds</div>
+                <div class="timer__buttons">
+                    <button type="button" class="timer__button">-</button>
+                    <button type="button" class="timer__button">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="timer__controls">
+            <button type="button" id="clear" class="timer__control">Clear</button>
+            <button type="button" id="stop" class="timer__control disabled">Stop</button>
+            <button type="button" id="start" class="timer__control">Start</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
