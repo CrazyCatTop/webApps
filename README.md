@@ -1,1 +1,3 @@
-There are some web apps here that I found on youtube and decided to copy for training.
+There are several web apps here.
+I found some of them on youtube.
+Other ones I made myself.
