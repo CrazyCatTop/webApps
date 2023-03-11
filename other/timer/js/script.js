@@ -68,6 +68,9 @@ function updateTimer() {
 
     if (t.total <= 0) {
         clearInterval(timerInterval);
+        timerButtons.forEach((button) => {
+            button.classList.remove('disabled');
+        });
     }
 }
 
@@ -134,8 +137,13 @@ timerButtons.forEach((button) => {
             }
             valueField.innerText = getZero(value);
             time = +(timerSeconds.innerHTML) + +(timerMinutes.innerHTML) * 60 + +(timerHours.innerHTML) * 60 * 60 + +(timerDays.innerHTML) * 60 * 60 * 24 - 1;
-            timerStart.classList.remove('disabled');
-            timerClear.classList.remove('disabled');
+            if (time === -1) {
+                timerStart.classList.add('disabled');
+                timerClear.classList.add('disabled');
+            } else {
+                timerStart.classList.remove('disabled');
+                timerClear.classList.remove('disabled');
+            }
         }
     });
 });
